@@ -1,0 +1,20 @@
+<div class="form_container">
+  <div class ="headline">
+    Browse Leave Calender
+  </div>
+  <div id ="menu" >
+    <%= render 'browse_calender' %>
+  </div>
+  <% if current_user && current_user.is_admin? %>
+    <%=  form_tag holidays_path  do %>
+      <div id="see"><%= render 'calender' %> </div>
+      <div class="clear"></div>
+      <div class ="bottom_line">
+        <%=submit_tag 'save'%>
+      </div>
+    <% end %>
+  <%else%>
+    <div id="see"><%= render 'calender' %> </div>
+    <div class="clear"></div>
+  <%  end %>
+</div>

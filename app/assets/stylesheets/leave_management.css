@@ -1,0 +1,89 @@
+body{background-color:black}
+#main_container{background-image:url(bgBody.png); width:1000px;margin-left: 105px; float: left }
+.welcome{color: darkCyan}
+.superHeader{ background: url(bgHeader.png) repeat-x; }
+.mainContentHolder{ height: auto; min-height:550px; }
+.superFooter{ background: url(bgHeader.png) repeat-x; padding: 10px; height: 85px; border-top: 1px solid red; }
+.superFooter span{color:red;font-size:14px;
+                  height:30px;outline:medium none;text-decoration:none;font-weight:700;cursor:pointer; text-shadow: 0 -1px #333;}
+.logo {color:fuchsia;display:block;font-size:20px; text-decoration: underline;
+       height:30px;outline:medium none;padding-top:12px; padding-left:340px;font-weight:700;text-shadow: 0 -1px #333;}
+.superHeader, .mainMenuHolder{height:90px}
+.shadowMask {overflow: hidden; padding-bottom: 10px;}
+.topMenu{ position:absolute; top:75px; right:176px; width:300px; text-align:right; padding-right:40px; }
+.topMenu a{color:red;font-size:14px;
+           height:30px;outline:medium none;text-decoration:none;font-weight:700;cursor:pointer; text-shadow: 0 -1px #333;}
+.topMenu a:hover{color:blueviolet;}
+.mainMenu{position:absolute; top:48px; }
+.mainMenu li {display:block; line-height:30px; float:left; list-style:none; margin-right:2px;border: solid 1px fuchsia}
+.mainMenu li a{color:red;display:block;font-size:14px;padding-right: 10px;
+               height:30px;outline:medium none;padding-left:10px;text-decoration:none;font-weight:700;cursor:pointer; text-shadow: 0 -1px #333;}
+.mainMenu li.selected a,.mainMenu li a:hover{color:blueviolet;}
+.mainMenu li.selected a,.mainMenu li a:hover{color:blueviolet;}
+.mainMenu li a span{display:block;padding-right:15px;}
+.mainMenu li.selected a span,.mainMenu li a:hover span{text-shadow: 0 -1px #fff;}
+
+.mainContent{ padding:20px; background-color:#fff; -moz-box-shadow: 0 0 10px #888;  box-shadow: 0 0 10px #888; -webkit-box-shadow:0 0 10px #888;
+              -moz-border-radius: 0 0 6px 6px; -webkit-border-radius:	0 0 6px 6px; border-radius:0 0 6px 6px; border:1px solid #ea008f; border-top: none;}
+
+.form_container{width:700px;float: left;margin-left:140px;margin-top: 30px;}
+#show_container .r_label{width:300px;border-bottom: solid 1px Fuchsia;border-top: solid 1px Fuchsia}
+.flashNotice{width:700px;float: left;margin-left:160px;margin-top: 30px;color: green;text-align: center}
+#menu{width:700px;float: left;margin-bottom: 20px;margin-top: 30px;background-color: #ffffff}
+.bottom_line{width:700px;float: left;margin-bottom: 20px;margin-top: 30px;background-color: #ffffff;text-align: center}
+.bottom_line_wb{width:700px;float: left;margin-bottom: 20px;margin-top: 30px;text-align: center}
+.headline{width:700px;float: left;margin-top: 30px;margin-bottom: 30px;background-color: none;text-align: center}
+.l_row{height: 30px;line-height: 40px;}
+.l_label{width: 300px;float:left;border-bottom: solid 1px Fuchsia;border-top: solid 1px Fuchsia}
+.r_label{float: left;border-bottom: solid 1px Fuchsia;border-top: solid 1px Fuchsia}
+.line{color: Fuchsia;font-size: 1px}
+
+.title_bar{width:700px;float: left;height: 30px; line-height: 32px}
+.title_bar span{border-bottom: solid 1px Fuchsia;float:left}
+
+#see{width:700px;float: left;}
+.prev{float: left;color: green;padding-left: 10px}
+.date{width: 60px;margin-left: 250px}
+.next{float: right; color: green;padding-right: 10px}
+.prev a, .next a {text-decoration: none; color: green}
+table.calender {
+    font-family: verdana,arial,sans-serif;
+    font-size:30px;
+    color:black;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    width:100%
+}
+table.calender th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: darkOliveGreen;
+    font-size: 15px!important
+}
+table.calender td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: GhostWhite;
+    color:black;
+}
+
+table a {color:greenFuchsia; text-decoration: none!important}
+.col_7 a{color:red; text-decoration: none!important}
+.col_6 a{color:red; ; text-decoration:none !important}
+.col_7 span{color:red; text-decoration: none!important}
+.col_6 span{color:red; ; text-decoration:none !important}
+.set {color:red!important}
+.link_button{padding: 10px;background-color: fuchsia;}
+.link_button a{text-decoration: none;color: black}
+
+select{width: 324px}
+
+ div.ui-datepicker
+ {
+   font-size: 10px;
+ }

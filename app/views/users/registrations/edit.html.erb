@@ -1,0 +1,36 @@
+<div class="form_container">
+  <div class ="headline">
+    Edit Your Credential
+  </div>
+  <div class="clear"></div>
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="l_row">
+      <span class="l_label"><%= f.label :email %></span>
+      <span class="r_label"> <%= f.email_field :email %></span>
+    </div>
+
+    <div class="l_row">
+      <span class="l_label"><%= f.label :password %></span>
+      <span class="r_label"><%= f.password_field :password, :autocomplete => "off" %></span>
+    </div>
+
+    <div class="l_row">
+      <span class="l_label"><%= f.label :password_confirmation %></span>
+      <span class="r_label"><%= f.password_field :password_confirmation %></span>
+    </div>
+
+    <div class="l_row">
+      <span class="l_label"><%= f.label :current_password %></span>
+      <span class="r_label"><%= f.password_field :current_password %></span>
+    </div>
+    <div class ="bottom_line_wb">
+      <%= f.submit "Update" %>
+    </div>
+  <% end %>
+  <div class ="bottom_line_wb" style="margin-top: 0px">
+    <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
+    <%= link_to "Back", :back %>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="superHeader">
+  <div class="wrap-980 mainMenuHolder">
+    <div class="logo"> Leave Management System </div>
+    <% if current_user %>
+      <div class="topMenu">
+        <span class="welcome"><%= current_user.name %> &nbsp;|&nbsp;</span>
+        <%= link_to 'Logout', destroy_user_session_path, :method => 'delete' %>
+      </div>
+    <%else%>
+      <div class="topMenu">
+        <%= link_to 'Login', new_user_session_path %>
+      </div>
+    <% end %>
+  </div>
+  <ul class="mainMenu">
+    <li><%= link_to 'Profile', edit_user_registration_path %></li>
+    <li><%= link_to 'Calender', holidays_path %></li>
+    <li><%= link_to 'Apply', new_leafe_path %></li>
+    <li><%= link_to 'Status', leaves_path %></li>
+    <li><%= link_to 'History', leave_history_leaves_path %></li>
+    <% if current_user && current_user.is_manager? %>
+      <li><%= link_to 'Approve Leave', leave_to_approve_leaves_path %></li>
+    <%  end %>
+    <% if current_user &&
+        current_user.is_admin? %>
+      <li><%= link_to 'Enroll Employee', new_user_registration_path %></li>
+    <%  end %>
+  </ul>
+</div>

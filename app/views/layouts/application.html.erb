@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leave-Management</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <%= stylesheet_link_tag  'application' %>
+    <%= javascript_include_tag  'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="main_container">
+      <%= render :partial => 'layouts/header' %>
+      <div style="clear: both"></div>
+      <div class="mainContentHolder">
+        <div class="shadowMask">
+          <%  if flash[:notice] %>
+          <div class="flashNotice"><%= flash[:notice] %></div>
+          <%end%>
+          <%= yield %>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+      <%= render :partial => 'layouts/footer' %>
+    </div>
+  </body>
+</html>
